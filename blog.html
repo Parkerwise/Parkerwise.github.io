@@ -6,21 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <div id="header">
-	<div class="bar-container">	
+	<div class="bar-container">
 		<nav>
 			<h1>Parker Wise</h1>
-			<ul>	
+			<ul id="sidemenu">	
 				<li><a href="./index.html">About</a></li>
 				<li><a href="./outreach.html">Outreach</a></li>
 				<li><a href="./Research.html">Research</a></li>
 				<li><a href="./parkerwise.pdf">CV</a></li>
 				<li><a href="./blog.html">Blog</a></li>
 				<li><a href="./contact.html">Contact</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
 			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>
 		</nav>
 	</div>
 	<div id="about">
@@ -49,7 +51,6 @@
 	function closemenu(){
 		sidemenu.style.right="-200px";
 	}
-
 </script>
 </html>
 
