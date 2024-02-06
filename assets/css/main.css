@@ -10,11 +10,9 @@ body{
 	background-image: url("../../images/stars.jpg");
 	background-size: cover;
 }
-
+/* ---------- All pages ---------*/
 .page-title{	
 	width: 100%;
-	max-width: 1000px;	
-	min-width: 450px;
 	margin-bottom: 10px;
 }
 .text{
@@ -25,6 +23,7 @@ body{
 }
 .bar-container{
 	padding:10px 10%;
+	width: 100%;
 	background-color:#090821E6;
 }
 .container{
@@ -33,6 +32,7 @@ body{
 	color:#fff;
 	max-height: 10%;
 }
+/* ---------- Navigation ---------*/
 nav{
 	display:flex;
 	align-items:center;
@@ -63,7 +63,16 @@ nav ul li a::after{
 nav ul li a:hover::after{
 	width:100%;	
 }
-
+nav .fas{
+	display: none;
+}
+	.secret-image img{
+	border-radius: 0px;
+	width: 100%;
+	height: auto;
+	display: none;
+}
+/* ---------- About ---------*/
 .row{
 	display: flex;
 	justify-content: space-between;
@@ -92,6 +101,7 @@ nav ul li a:hover::after{
 	border-radius: 10px;
 	padding: 10px;
 }
+/* ---------- Blog ---------*/
 .blog-entry{
 	background: #2E1B6FBF;
 	border-radius: 10px;
@@ -101,31 +111,21 @@ nav ul li a:hover::after{
 }
 .date{
 	width: 100%;
-	max-width: 1000px;	
-	min-width: 450px;
 	margin-bottom: 10px;
 	font-weight: normal;
+	font-size: 0.8rem;
 }
-nav .fas{
-	display: none;
+.blog-title{
+	width:100%;
+	font-weight: normal;
 }
-	.secret-image img{
-	border-radius: 0px;
-	width: 100%;
-	height: auto;
-	display: none;
-}
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) and (min-width:701px){
 	.about-col-1 img{
 	border-radius: 10px;
 	width: 100%;
-	min-height: 100%;
 }
 	.page-title{	
 	width: 100%;
-	max-width: 400px;	
-	min-width: 10px;
-	font-size: 3.3vw;
 }
 	.secret-image img{
 	border-radius: 0px;
@@ -169,7 +169,7 @@ nav ul .fas{
 }
 	.secret-image img{
 	border-radius: 0px;
-	width: 100%;
+	width: 75%;
 	height: 100%;
 	display:block;
 	margin-left: auto;
@@ -179,13 +179,13 @@ nav ul .fas{
 }
 	.page-title{	
 	width: 100%;
-	font-size: 4vw;
 }
 .about-col-2{
 	flex-basis: 100%;
 	background: #2E1B6FBF;
 	border-radius: 10px;
 	padding: 10px;
+	width: 100%;
 }
 nav .fas{
 	display: block;
