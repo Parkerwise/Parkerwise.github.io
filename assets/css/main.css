@@ -154,7 +154,7 @@ links {
 	border-radius: 10px;
 	padding: 10px;
 	width:66%;
-	margin-top: 10px;
+	margin-bottom: 10px;
 	float: right;
 	margin-left: auto;
 	
@@ -179,6 +179,7 @@ links {
 	height: auto;
 	display: none;
 }
+
 nav .fas{
 	display: block;
 }
@@ -232,6 +233,17 @@ nav ul .fas{
 	border-radius: 10px;
 	padding: 10px;
 	width: 100%;
+}
+
+.research-col{
+	flex-basis: 100%;
+	background: #2E1B6FBF;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+}
+.resource{
+	padding-left:1em;
 }
 nav .fas{
 	display: block;
