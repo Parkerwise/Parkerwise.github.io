@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Parker Wise</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	
+</head>
+<body>
+<div id="header">
+	<div class="bar-container">
+		<nav>
+			<h1>Parker Wise</h1>
+			<ul id="sidemenu">	
+				<li><a href="../index.html">About</a></li>
+				<li><a href="../projects.html">Projects</a></li>
+				<li><a href="../outreach.html">Outreach</a></li>
+				<li><a href="../parkerwise.pdf">CV</a></li>
+				<li><a href="../blog.html">Blog</a></li>
+				<i class="fas fa-times" onclick="closemenu()"></i>
+			</ul>
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+		</nav>
+	</div>
+
+</div>
+<div class="container">
+		<h1 class="project-title">Source Identification</h1>
+		<!-- <div class="projects_image"> -->
+			<img class="projects_image" style="width: 500px;" preserveAspectRatio="xMidYMin" src="../images/continuum.svg"/>
+		<!-- </div> -->
+</div>
+
+<div class="mobile">
+	<img src="../images/continuum.svg">
+</div>
+<script>
+	var sidemenu = document.getElementById("sidemenu");
+	function openmenu(){
+		sidemenu.style.right="0";
+	}
+	function closemenu(){
+		sidemenu.style.right="-200px";
+	}
+
+</script>
+</body>
+<footer>
+	<a href="https://www.github.com/Parkerwise"><j class="fa-brands fa-github"></j></a>	
+	<a href="https://twitter.com/wiseastronomy"><j class="fa-brands fa-twitter"></j></a>	
+	<a href="mailto:wiseparker03@ku.edu"><j class="fa-solid fa-envelope"></j></a>
+	<div class="copyright">&copy Parker Wise 2024</div>
+</footer>
+</html>
+
+
