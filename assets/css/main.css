@@ -8,9 +8,9 @@ html{
 	min-height:100%;
 }
 body{
-	background: #090821;
+	background: #0f0f3e;
 	color: #ffffff;
-	background-image: url("../../images/stars.jpg");
+	/* background-image: url("../../images/stars_2.jpg"); */
 	background-size: cover;
 	height: 100%;
 	min-height: 100vh;
@@ -20,6 +20,9 @@ body{
 
 /* ---------- All pages ---------*/
 .page-title{	
+
+	border-radius: 10px;
+	margin-bottom: 10px;
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -71,7 +74,7 @@ nav ul li a:hover::after{
 nav .fas{
 	display: none;
 }
-	.secret-image img{
+.mobile {
 	border-radius: 0px;
 	width: 100%;
 	height: auto;
@@ -108,7 +111,7 @@ nav .fas{
 }
 /* ---------- Blog ---------*/
 .blog-entry{
-	background: #2E1B6FBF;
+	/* background: #2E1B6FBF; */
 	border-radius: 10px;
 	padding: 10px;
 	width:100%;
@@ -148,17 +151,74 @@ links {
 	font-size:0.8rem;
 	margin-top: 5px;
 }
+
 /*-------- Research -----------*/
-.research-col{
+.projects_text{
 	background: #2E1B6FBF;
 	border-radius: 10px;
 	padding: 10px;
-	width:66%;
 	margin-bottom: 10px;
 	float: right;
-	margin-left: auto;
-	
+	margin: 20px;
 }
+
+.project_row{
+	margin: 20px;
+	padding: 5px;
+	/* border: 3px solid red; */
+}
+.project_column{
+	width: 50%;
+	float: left;
+	/* border: 3px solid yellow; */
+	display: flex;
+	justify-content: center;
+	}
+.project_link{
+	display: flex;
+	justify-content: center;
+	background-color:#0a092480;
+	/* border: 3px solid green; */
+	border-radius: 10px;
+	width: 480px;
+	height: 300px;
+	padding-top:20px;
+	padding-left:20px;
+	padding-right:20px;
+	text-align: center;
+	align-items: center;
+	transition: transform 0.25s;
+
+}
+
+.project_link:hover{
+	transform: scale(1.05);
+}
+.project_thumbnail{
+	width:fit-content;
+	/* border: 3px solid purple; */
+}
+.projects_image{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.project_title{	
+	display: inline-block;
+	width: fit-content;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	/* width: 500px; */
+	margin-bottom: 10px;
+}
+
+/* fooooooo */
+/* foooo */
+/* .fullscreen{ */
+/* 	padding: 5px; */
+/* } */
 .resource{
 	padding-top:10px;
 	padding-left: 4em;
@@ -166,14 +226,13 @@ links {
 }
 
 @media only screen and (max-width: 900px) and (min-width:701px){
-	.about-col-1 img{
-	border-radius: 10px;
-	width: 100%;
+	.fullscreen img{
+	display: none;
 }
 	.page-title{	
 	width: 100%;
 }
-	.secret-image img{
+	.mobile img{
 	border-radius: 0px;
 	width: 100%;
 	height: auto;
@@ -208,21 +267,13 @@ nav ul .fas{
 
 }
 @media only screen and (max-width: 700px){
-	.about-col-1 img{
-	border-radius: 0px;
-	width: auto;
-	height: 50%;
+	.fullscreen{
 	display: none;
 }
-	.secret-image img{
-	border-radius: 0px;
-	width: 75%;
+.mobile {
 	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	margin-bottom: 25px;
-	border-radius: 10px;
+	margin: 20px;
+	padding: 5px;
 }
 	.page-title{	
 	width: 100%;
