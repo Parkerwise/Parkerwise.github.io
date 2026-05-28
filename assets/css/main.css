@@ -89,10 +89,11 @@ nav .fas{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	border-radius: 10px;
+	align-items: center;
 
 }
 .about-col-1{
-	flex-basis: 30%;
+	flex-basis: 35%;
 }
 .about-col-1 img{
 	border-radius: 10px;
@@ -101,8 +102,11 @@ nav .fas{
 
 }
 .about-col-2{
-	flex-basis: 66%;
+	flex-basis: 60%;
 	background: #2E1B6FBF;
+	height: fit-content;
+	/* float: left; */
+	/* text-align: left; */
 	border-radius: 10px;
 	padding: 10px;
 }
