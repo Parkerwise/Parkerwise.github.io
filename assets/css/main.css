@@ -26,6 +26,9 @@ body{
 	width: 100%;
 	margin-bottom: 10px;
 }
+.bio{
+	font-size: 18px;
+}
 .text{
 	padding: 10px 10%;
 	background-color:#fff;
